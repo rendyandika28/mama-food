@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="./favicon.png">
+  <title>Mama's Foods</title>
+</head>
+
+<body>
+  <!-- Navbar section -->
+  <header class="navbar navbar-light bg-white fixed-top">
+    <div class="container">
+      <nav-bar></nav-bar>
+    </div>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-5">
+          <h1>Find your favorite meal receipts with easy way </h1>
+          <p>Just search in our magic search column to show your wish</p>
+          <hr class="my-4">
+          <a href="#search-bar" class="btn-cta btn btn-secondary">Click Here!</a>
+        </div>
+        <div class="col-7 d-none d-lg-block">
+          <img src="./banner.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-5">
+
+  <main>
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-11">
+          <search-bar id="search-bar"></search-bar>
+        </div>
+      </div>
+      <div class="row list-item justify-content-center justify-content-md-start">
+        <!-- This Section For Meal Item -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="mealDetail" tabindex="-1" role="dialog" aria-labelledby="mealDetailLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mealDetailLabel">Detail : <span class="mdl-title"></span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <img src="" class="img-fluid mdl-img" alt="img">
+              </div>
+              <div class="col-8">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h4 class="mdl-name"></h4>
+                  </li>
+                  <li class="list-group-item"><strong>Country : </strong><span class="mdl-country"></span></li>
+                  <li class="list-group-item"><strong>Category : </strong><span class="mdl-category"></span></li>
+                  <li class="list-group-item"><strong>Instructions : </strong><span class="mdl-instructions"></span>
+                  </li>
+                  <li class="list-group-item"><strong>Link to watch : </strong> <a href="" class="mdl-link"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-5">
+  <footer class="bg-secondary">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12 text-center">
+          <foo-title></foo-title>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
